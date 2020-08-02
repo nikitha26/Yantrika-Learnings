@@ -3,7 +3,7 @@
   padding: 0px;  
 }
 .nav-item{
-    min-width: 100px;
+    min-width: 140px;
     font-size: 20px;
 }
 li a{
@@ -14,10 +14,11 @@ li a:hover{
 }
 .image{
     border-radius: 50%;
+    
 }
 ul.sidebaritems{
   margin-top: 120px;
-  margin-left: 60px;
+  margin-left: 40px;
   list-style-type: none;
 }
 ul.sidebaritems li{
@@ -47,9 +48,6 @@ nav ul li a:hover{
 nav ul ul li{
   border-bottom: none;
 }
-.fa{
-  color:white;
-}
 .btn{
   cursor: pointer;
   transition: left 0.4s ease;
@@ -67,17 +65,29 @@ nav ul ul li{
   font-size: 30px;
   line-height:25px ;
 }
-.img{
-  position: absolute;
-  left:80px;
-  top:130px;
-}
 .img i{
   font-size: 30px;
 }
-.headings{
+.fa{
   color:white;
-  position: absolute;
-  top:85px;
 }
-
+.icon{
+  position: absolute;
+  top:130px;
+  left:55px;
+}
+.icon3{
+  position: absolute;
+  top:214px;
+  left:55px;
+}
+.icon4{
+  position: absolute;
+  top:252px;
+  left:55px;
+}
+.icon5{
+  position: absolute;
+  top:290px;
+  left:55px;
+}
