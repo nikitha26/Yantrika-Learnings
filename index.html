@@ -4,41 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yantrika Learnings</title>
+    <!-- Css file -->
     <link rel="stylesheet" href="stylesheet.css">
+    <!--Font Awesome Links  -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap Links -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- Material Icons Link -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+
 </head>
 <body>
-    <!--topnavbar started -->
-    <nav class="navbar navbar-expand-lg  bg-primary fixed-top">
-        <div class="btn" onclick="opennav()">
-            <i class="fa fa-bars" aria-hidden="true"></i>
+    <!--Topnavbar started -->
+    <nav class="navbar navbar-expand-lg  fixed-top">
+        <div class="btn">
+            <i class="material-icons" id="icon">menu</i>
         </div>
-        <a class="navbar-brand mr-auto" href="#" style="margin:3px;color:rgb(255,255,255)" >
+
+        <!--Brand -->
+        <a class="navbar-brand mr-auto" href="#" id="brand">
            Yantrika Learnings
         </a>
-        <!-- <button type="button" class="navbar-toggler menu" data-toggle="collapse" data-target="#mainmenu">
-        </button>  -->
+
+        <!-- Top menu -->
         <div class="collapse navbar-collapse" id="mainmenu">
             <ul class="navbar-nav ml-auto hidden-lg-down">
-                <img src="pic1.jpeg" height="50px" width="50px"  class="image d-none d-sm-block"alt="img">
-                <li class="nav-item"><a class="nav-link" href="#">SignOut</a></li>
+                <li class="nav-item"><a class="nav-link" href=""><i class="material-icons" id="notfication">notifications</i></a></li>
+                <li class="nav-item"><a class="nav-link" href="#" style="color: white;">SignOut</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><img src="pic1.jpeg" height="50px" width="50px"class="image d-none d-sm-block"alt="img"></a></li>
             </ul>
         </div>      
     </nav>
-<!-- top navbar ended -->
+    <!-- Top navbar ended -->
 
 <!-- side navbar started -->
 <nav class="sidebar">
     <ul class="sidebaritems">
-        <i class="fa fa-tachometer icon" aria-hidden="true"></i><li><a href="#">Dashboard</a></li>
-        <li><a href="#">Mycourses</a></li>
-        <i class="fa fa-money icon3" aria-hidden="true"></i><li><a href="#">Payment</a></li>
-        <i class="fa fa-cog icon4" aria-hidden="true"></i><li><a href="#">Settings</a></li>
-        <i class="fa fa-users icon5" aria-hidden="true"></i><li><a href="#">Profile</a></li>
-        <li class="d-lg-none" style="position: absolute;top:320px; left:30px;"><a href="#">SignOut</a></li>
+        <li>
+            <a href="#" id="demo1" onclick="background('demo1')">
+                <i class="material-icons" id="icon1">dashboard</i>&nbsp;&nbsp;
+                Dashboard
+            </a>
+        </li>
+        <li>
+            <a href="#" id="demo2" onclick="background('demo2')">
+                <i class="material-icons" id="icon1">school</i>&nbsp;&nbsp;
+                 Mycourses
+            </a>
+        </li>
+        <li>
+            <a href="#" id="demo3" onclick="background('demo3')">
+                <i class="material-icons" id="icon1">payments</i>&nbsp;&nbsp;
+                Payment
+            </a>
+        </li>
+        <li>
+            <a href="#" id="demo4" onclick="background('demo4')">
+                <i class="material-icons" id="icon1">settings</i>&nbsp;&nbsp;
+                Settings
+            </a>
+        </li>
+        <li>
+            <a href="#" id="demo5" onclick="background('demo5')">
+                <i class="material-icons" id="icon1">person</i>&nbsp;&nbsp;
+                Profile
+            </a>
+        </li>
+        <li class="d-lg-none" style="position: absolute;top:370px; left:30px;">
+            <a href="#">SignOut</a>
+        </li>
     </ul>
 
 </nav>
@@ -46,12 +82,22 @@
 
 
 <script>
-  $('.btn').click(function(){
+    function background(n){
+      var deactive = document.getElementsByClassName("active");
+      if(deactive.length >0)
+      {
+        deactive[0].className = "";
+      }
+      var current = document.getElementById(n)
+      current.className = "active";
+  }
 
+  $('.btn').click(function(){
   $(this).toggleClass("click");
   $('.sidebar').toggleClass("show");
-
   });
+
+  
 </script>
 </body>
 </html>
