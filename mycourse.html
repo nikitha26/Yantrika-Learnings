@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mycourse</title>
+    <script src="app.js"></script>
+    <!-- Css file -->
+    <link rel="stylesheet" href="stylesheet.css">
+    <!--Javascript file  -->
+    <!--Font Awesome Links  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap Links -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- Material Icons Link -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+
+</head>
+<body>
+    <!--Topnavbar started -->
+    <nav class="navbar navbar-expand-lg  fixed-top">
+        <div class="btn">
+            <i class="material-icons" id="icon">menu</i>
+        </div>
+
+        <!--Brand -->
+        <a class="navbar-brand mr-auto" href="#" id="brand">
+           Yantrika Learnings
+        </a>
+
+        <!-- Top menu -->
+        <div class="collapse navbar-collapse" id="mainmenu">
+            <ul class="navbar-nav ml-auto hidden-lg-down">
+                <li class="nav-item"><a class="nav-link" href=""><i class="material-icons" id="notfication">notifications</i><span class="badge badge-danger badge-pill">4</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="#" style="color: white;">SignOut</a></li>
+              
+                <!-- ********DropDown Menu Stated ******* -->
+                &nbsp; &nbsp; &nbsp; &nbsp;
+              <!-- <li class="nav-item dropdown">
+                  <button type="button" class="data-toggle" data-toggle="dropdown">
+                    -->
+                    <img src="img\guy-1.jpg" height="50px" width="50px"class="image d-none d-sm-block"alt="img">
+                    <!-- <div class="dropdown-menu">
+                        <a href="" class="dropdown-item">SignOut</a>
+                    </div>
+                </button>
+              </li> -->
+              <!-- *******DropDown Ended ******-->
+
+            </ul>
+        </div>      
+    </nav>
+    <!-- Top navbar ended -->
+
+<!-- side navbar started -->
+    <nav class="sidebar">
+        <ul class="sidebaritems">
+            <li>
+                <a href="#" id="demo1" onclick="background('demo1')">
+                    <i class="material-icons" id="icon1">dashboard</i>&nbsp;&nbsp;
+                    Dashboard
+                </a>
+            </li>
+            <li>
+                <a href="#" id="demo2" onclick="background('demo2')">
+                    <i class="material-icons" id="icon1">school</i>&nbsp;&nbsp;
+                    Mycourses
+                </a>
+            </li>
+            <li>
+                <a href="#" id="demo3" onclick="background('demo3')">
+                    <i class="material-icons" id="icon1">payments</i>&nbsp;&nbsp;
+                    Payment
+                </a>
+            </li>
+            <li>
+                <a href="#" id="demo4" onclick="background('demo4')">
+                    <i class="material-icons" id="icon1">settings</i>&nbsp;&nbsp;
+                    Settings
+                </a>
+            </li>
+            <li>
+                <a href="#" id="demo5" onclick="background('demo5')">
+                    <i class="material-icons" id="icon1">person</i>&nbsp;&nbsp;
+                    Profile
+                </a>
+            </li>
+            <li class="d-lg-none" style="position: absolute;top:370px; left:30px;">
+                <a href="#">SignOut</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Side navbar ended -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="card">
+                    <div class="header text-center">
+                        <h3 class="card-title">Python</h3>
+                        <div class="body">
+                            <img class="card-img-bottom" src="img/python.png" alt="Card image" style="width:100%">
+                            <div class="footer">
+                                <small class="text-muted">
+                                Begineer
+                                </small>
+                                <p>Let’s start with a quick tour of Vue’s data binding features. 
+                                    If you are more interested in ...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="card">
+                    <div class="header text-center">
+                        <h3 class="card-title">Python</h3>
+                        <div class="body">
+                            <img class="card-img-bottom" src="img/python.png" alt="Card image" style="width:100%">
+                            <div class="footer">
+                                <small class="text-muted">
+                                Begineer
+                                </small>
+                                <p>Let’s start with a quick tour of Vue’s data binding features. 
+                                    If you are more interested in ...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>    
+    </div>
+ <script>
+  $('.btn').click(function(){
+    $(this).toggleClass("click");
+    $('.sidebar').toggleClass("show");
+    });
+</script>
+    
+</body>
+</html>

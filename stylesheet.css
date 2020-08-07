@@ -5,9 +5,6 @@
 .navbar{
   background-color: rgb(33,150,243);
 }
-.nav-item{
-    min-width: 30px;
-}
 li a{
   color:rgb(156, 154, 158);
   font-size: 18px;
@@ -34,6 +31,7 @@ ul.sidebaritems li {
   left:-250px;
   background-color:rgb(57,68,77);
   transition: left 0.4s ease;
+  margin-top: -200px;
 }
 nav ul li{
   line-height: 40px;
@@ -85,8 +83,34 @@ nav ul ul li{
 #notfication{
   color: rgb(157, 205, 228);
   font-size: 25px;
-  margin-top: 10px;
+  margin-top: 7px;
+  margin-right: -9px;
 }
 .active{
   background-color: rgb(47,57,64);
+}
+.material-icons:hover{
+  color:blue
+}
+span{
+  margin-top:2px;
+}
+button{
+  border: none !important;
+  outline: none !important;
+}
+.dropdown-menu{
+  height: 70px;
+}
+.dropdown{
+  margin-right: 40px;
+}
+.dropdown-item{
+  color: red;
+}
+.container{
+  margin-top: 200px;
+}
+.card{
+  margin-left: 200px;
 }
