@@ -31,7 +31,7 @@ ul.sidebaritems li {
   left:-250px;
   background-color:rgb(57,68,77);
   transition: left 0.4s ease;
-  margin-top: -200px;
+  /* margin-top: -200px; */
 }
 nav ul li{
   line-height: 40px;

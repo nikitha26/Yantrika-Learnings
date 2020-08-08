@@ -1,0 +1,41 @@
+html{
+    overflow: hidden;
+}
+*{
+    margin: 0px;
+    padding: 0px;  
+  }
+  .navbar{
+    background-color: rgb(33,150,243);
+  }
+  .image{
+    border-radius: 50%;
+}
+#brand{
+    margin:3px;
+    font-size: 25px;
+    color:rgb(255,255,255);
+  }
+  #notfication{
+    color: rgb(157, 205, 228);
+    font-size: 25px;
+    margin-top: 7px;
+    margin-right: -9px;
+  }
+  #side{
+      background-color: rgb(67, 172, 185);
+  }
+  .chapters{
+      margin-top: 200px;
+  }
+  ul li a {
+      color:rgb(255, 0, 98);
+      margin-left: 100px;
+      font-size: 20px;
+      padding: 10px;
+      
+  }
+  ul li a:hover{
+      text-decoration: none;
+  }
+  
