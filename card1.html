@@ -13,6 +13,7 @@
     <!-- Bootstrap Links -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <!-- Material Icons Link -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
@@ -51,16 +52,32 @@
     <!-- Started  Side 3 coloumns -->
         <div class="row">
             <div class="col-lg-3 col-md-4 col-sm-12" id="side">
-                <div class="dropdown chapters">
-                    <a class="dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
-                       <span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-right">
-                      <li><a href="#">HTML</a></li>
-                      <li><a href="#">CSS</a></li>
-                      <li><a href="#">JavaScript</a></li>
-                    </ul>
-                </div>
+                <ul>
+                    <li>
+                        <button type="button" class="btn btn-default btn-lg" data-toggle="collapse" data-target="#demo">
+                            Chapter1
+                        </button>
+                        <div id="demo" class="collapse">
+                            <ul>
+                                <li><a href="">Video1</a></li>
+                                <li><a href="">Video1</a></li>
+                                <li><a href="">Video1</a></li>
+                                <li><a href="">Video1</a></li>
+                            </ul>
+                        </div><br>
+                        <button type="button" class="btn btn-default btn-lg" data-toggle="collapse" data-target="#demo1">
+                            Chapter2
+                        </button>
+                        <div id="demo1" class="collapse">
+                            <ul>
+                                <li><a href="">Video1</a></li>
+                                <li><a href="">Video1</a></li>
+                                <li><a href="">Video1</a></li>
+                                <li><a href="">Video1</a></li>
+                            </ul>
+                        </div>
+                    </li>    
+                </ul>        
             </div>
         </div>
     <!--Ended Side 3 coloumns -->
