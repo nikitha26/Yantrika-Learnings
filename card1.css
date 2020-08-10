@@ -28,11 +28,17 @@ html{
 }
 ul li {
   list-style-type: none;
-  margin-left: 50px;
+  /* margin-left: 50px; */
   font-size: 20px;
 }
 ul li a:hover{
   text-decoration: none;
+}
+#demo{
+  margin-left: 50px;
+}
+#demo1{
+  margin-left: 50px;
 }
 .btn:focus,.btn:active{
   box-shadow: none !important;

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Card1.html</title>
-    <script src="ap.js"></script>
+    <script src="app.js"></script>
     <!-- Css file -->
     <link rel="stylesheet" href="card1.css">
     <!--Javascript file  -->
@@ -54,32 +54,45 @@
             <div class="col-lg-3 col-md-4 col-sm-12" id="side">
                 <ul>
                     <li>
-                        <button type="button" class="btn btn-default btn-lg" data-toggle="collapse" data-target="#demo">
-                            Chapter1
+                        <button type="button" class="btn btn-default btn-lg" data-toggle="collapse" data-target="#demo" id="chap">
+                            Chapter1  <i class="material-icons" id="icon1">keyboard_arrow_down</i>
                         </button>
                         <div id="demo" class="collapse">
                             <ul>
+                                <li><a href="">Video1.1</a></li>
+                                <li><a href="">Video1.1</a></li>
                                 <li><a href="">Video1</a></li>
                                 <li><a href="">Video1</a></li>
-                                <li><a href="">Video1</a></li>
-                                <li><a href="">Video1</a></li>
-                            </ul>
-                        </div><br>
-                        <button type="button" class="btn btn-default btn-lg" data-toggle="collapse" data-target="#demo1">
-                            Chapter2
+                            </ul>       
+                        </div>
+                    </li>
+                    <li>
+                        <button type="button" class="btn btn-default btn-lg" data-toggle="collapse" data-target="#demo1" id="chap">
+                            Chapter2  <i class="material-icons" id="icon1">keyboard_arrow_down</i>
                         </button>
                         <div id="demo1" class="collapse">
                             <ul>
-                                <li><a href="">Video1</a></li>
-                                <li><a href="">Video1</a></li>
+                                <li><a href="">Video2.1</a></li>
+                                <li><a href="">Video1.</a></li>
                                 <li><a href="">Video1</a></li>
                                 <li><a href="">Video1</a></li>
                             </ul>
-                        </div>
-                    </li>    
-                </ul>        
+                        </div>  
+                    </li>  
+                </ul>
             </div>
         </div>
     <!--Ended Side 3 coloumns -->
+    <script>
+            $('#chap').on("click", function(){
+                if($('#icon1').text()== 'keyboard_arrow_down')
+                {
+                    $('#icon1').text("keyboard_arrow_up");
+                }
+                else{
+                    $('#icon1').text("keyboard_arrow_down");
+                }
+            });   
+    </script>
 </body>
 </html>
