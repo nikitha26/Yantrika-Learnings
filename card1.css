@@ -1,6 +1,6 @@
-html{
+/* html{
     overflow: hidden;
-}
+} */
 *{
     margin: 0px;
     padding: 0px;  
@@ -22,10 +22,13 @@ html{
   margin-top: 7px;
   margin-right: -9px;
 }
-#side{
-    background-color: rgb(255, 255, 255);
-    margin-top: 110px;
+#sidemenu{
+    background-color: rgb(57,68,77);
+    height: 800px;
 }
+/* .chapters{
+  margin-top: 10px;
+} */
 ul li {
   list-style-type: none;
   /* margin-left: 50px; */
@@ -43,4 +46,11 @@ ul li a:hover{
 .btn:focus,.btn:active{
   box-shadow: none !important;
   outline: none !important;
+}
+#video{
+  margin-top: 150px;
+  margin-left: 70px;
+}
+li a:hover{
+  color: red;
 }

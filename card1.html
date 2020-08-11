@@ -51,35 +51,48 @@
 
     <!-- Started  Side 3 coloumns -->
         <div class="row">
-            <div class="col-lg-3 col-md-4 col-sm-12" id="side">
-                <ul>
-                    <li>
-                        <button type="button" class="btn btn-default btn-lg" data-toggle="collapse" data-target="#demo" id="chap">
-                            Chapter1  <i class="material-icons" id="icon1">keyboard_arrow_down</i>
-                        </button>
-                        <div id="demo" class="collapse">
-                            <ul>
-                                <li><a href="">Video1.1</a></li>
-                                <li><a href="">Video1.1</a></li>
-                                <li><a href="">Video1</a></li>
-                                <li><a href="">Video1</a></li>
-                            </ul>       
-                        </div>
-                    </li>
-                    <li>
-                        <button type="button" class="btn btn-default btn-lg" data-toggle="collapse" data-target="#demo1" id="chap">
-                            Chapter2  <i class="material-icons" id="icon1">keyboard_arrow_down</i>
-                        </button>
-                        <div id="demo1" class="collapse">
-                            <ul>
-                                <li><a href="">Video2.1</a></li>
-                                <li><a href="">Video1.</a></li>
-                                <li><a href="">Video1</a></li>
-                                <li><a href="">Video1</a></li>
-                            </ul>
-                        </div>  
-                    </li>  
-                </ul>
+            <div class="col-lg-2 col-md-4 col-sm-12">
+                <div id="sidemenu" style="margin-top: 70px;"> 
+                    <ul>
+                        <li class="chapters">
+                            <button type="button" class="btn btn-default btn-lg" data-toggle="collapse" data-target="#demo" id="chap" style="color: white;">
+                                Chapter1  <i class="material-icons" id="icon1">keyboard_arrow_down</i>
+                            </button>
+                            <div id="demo" class="collapse">
+                                <ul>
+                                    <li><a href="">Video1.1</a></li>
+                                    <li><a href="">Video1.1</a></li>
+                                    <li><a href="">Video1</a></li>
+                                    <li><a href="">Video1</a></li>
+                                </ul>       
+                            </div>
+                        </li>     
+                        <li class="chapters">
+                            <button type="button" class="btn btn-default btn-lg" data-toggle="collapse" data-target="#demo1" id="chap1" style="color: white;">
+                                Chapter2  <i class="material-icons" id="icon2">keyboard_arrow_down</i>
+                            </button>
+                            <div id="demo1" class="collapse">
+                                <ul>
+                                    <li><a href="">Video2.1</a></li>
+                                    <li><a href="">Video1.</a></li>
+                                    <li><a href="">Video1</a></li>
+                                    <li><a href="">Video1</a></li>
+                                </ul>
+                            </div>  
+                        </li>  
+                    </ul>
+                </div>    
+            </div>
+            <div class="col-lg-10 col-md-4 col-sm-12">
+                <iframe width="950" height="500" src="https://www.youtube.com/embed/2UPCEA6187s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
+                <div style="margin-top: 30px;">
+                    <hr>
+                    <ul class="nav nav-tabs list-inline">
+                        <li class="nav-item active" style="margin:3px"><a class="nav-link" href="">Overview</a></li>
+                        <li  class="nav-item" style="margin:3px"><a  class="nav-link" href="">Q/A</a></li>
+                        <li  class="nav-item" style="margin:3px"><a  class="nav-link" href="">Notes</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     <!--Ended Side 3 coloumns -->
@@ -93,6 +106,19 @@
                     $('#icon1').text("keyboard_arrow_down");
                 }
             });   
+
+            $('#chap1').on("click", function(){
+                if($('#icon2').text()== 'keyboard_arrow_down')
+                {
+                    $('#icon2').text("keyboard_arrow_up");
+                }
+                else{
+                    $('#icon2').text("keyboard_arrow_down");
+                }
+            });   
+
+
+           
     </script>
 </body>
 </html>
