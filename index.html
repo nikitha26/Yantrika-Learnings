@@ -16,6 +16,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <!-- Material Icons Link -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.css" integrity="sha512-bYPO5jmStZ9WI2602V2zaivdAnbAhtfzmxnEGh9RwtlI00I9s8ulGe4oBa5XxiC6tCITJH/QG70jswBhbLkxPw==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.min.js" integrity="sha512-AIOTidJAcHBH2G/oZv9viEGXRqDNmfdPVPYOYKGy3fti0xIplnlgMHUGfuNRzC6FkzIo0iIxgFnr9RikFxK+sw==" crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -54,52 +56,90 @@
     </nav>
     <!-- Top navbar ended -->
 
-<!-- side navbar started -->
-<nav class="sidebar">
-    <ul class="sidebaritems">
-        <li>
-            <a href="#" id="demo1" onclick="background('demo1')">
-                <i class="material-icons" id="icon1">dashboard</i>&nbsp;&nbsp;
-                Dashboard
-            </a>
-        </li>
-        <li>
-            <a href="mycourse.html" id="demo2" onclick="background('demo2')">
-                <i class="material-icons" id="icon1">school</i>&nbsp;&nbsp;
-                 Mycourses
-            </a>
-        </li>
-        <li>
-            <a href="#" id="demo3" onclick="background('demo3')">
-                <i class="material-icons" id="icon1">payments</i>&nbsp;&nbsp;
-                Payment
-            </a>
-        </li>
-        <li>
-            <a href="#" id="demo4" onclick="background('demo4')">
-                <i class="material-icons" id="icon1">settings</i>&nbsp;&nbsp;
-                Settings
-            </a>
-        </li>
-        <li>
-            <a href="#" id="demo5" onclick="background('demo5')">
-                <i class="material-icons" id="icon1">person</i>&nbsp;&nbsp;
-                Profile
-            </a>
-        </li>
-        <li class="d-lg-none" style="position: absolute;top:370px; left:30px;">
-            <a href="#">SignOut</a>
-        </li>
-    </ul>
+    <!-- side navbar started -->
+    <div class="wrapper">
+        <nav class="sidebar">
+            <ul class="sidebaritems">
+                <li>
+                    <a href="#" id="demo1" onclick="background('demo1')">
+                        <i class="material-icons" id="icon1">dashboard</i>Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="mycourse.html" id="demo2" onclick="background('demo2')">
+                        <i class="material-icons" id="icon1">school</i>Mycourses
+                        
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="demo3" onclick="background('demo3')">
+                        <i class="material-icons" id="icon1">payments</i>
+                        Payment
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="demo4" onclick="background('demo4')">
+                        <i class="material-icons" id="icon1">settings</i>
+                        Settings
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="demo5" onclick="background('demo5')">
+                        <i class="material-icons" id="icon1">person</i>
+                        Profile
+                    </a>
+                </li>
+                <li class="d-lg-none">
+                    <a href="#">SignOut</a>
+                </li>
+            </ul>
 
-</nav>
-<!-- Side navbar ended -->
+        </nav>
+    <!-- Side navbar ended -->
+
+    <!-- Main Page Content -->
+    <div id="mainpage">
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 pt-3">
+                    <h1>Date and Time picker </h1>
+                    <h1>Date and Time picker </h1>
+                     <!-- <h5>Choose Event Date : </h5><input type="text" class="date_picker">
+                      <h5>Registration Date:</h5><input type="text" class="registration"> -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <script>
- 
-  $('.btn').click(function(){
-    $(this).toggleClass("click");
+    
+
+    $('document').ready(function(){
     $('.sidebar').toggleClass("show");
+    $('.btn').click(function(){
+        $('.sidebar').toggleClass('show')
+      $('.sidebar').toggleClass("hide");
     });
+
+
+   //Date Picker Code Started
+    $('.date_picker').datetimepicker({
+                formatDate: 'Y/m/d',
+                minDate: Date(),
+            });
+            $('.date_picker').change(function(){
+                var event_date = $('.date_picker').val();
+                //console.log(event_date)
+                $('.registration').datetimepicker({
+                formatDate: 'Y/m/d',
+                minDate: Date(),
+                maxDate: event_date,
+            })
+                 
+            })
+    });
+    //Date Picker Code Ended
 
 </script>
 </body>

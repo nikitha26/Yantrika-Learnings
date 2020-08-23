@@ -30,8 +30,11 @@ ul.sidebaritems li {
   height: 100%;
   left:-250px;
   background-color:rgb(57,68,77);
-  transition: left 0.4s ease;
+  transition: left 0.5s ease;
   /* margin-top: -200px; */
+}
+.hide{
+  left: -250px;
 }
 nav ul li{
   line-height: 40px;
@@ -89,9 +92,6 @@ nav ul ul li{
 .active{
   background-color: rgb(47,57,64);
 }
-.material-icons:hover{
-  color:blue
-}
 span{
   margin-top:2px;
 }
@@ -108,9 +108,10 @@ button{
 .dropdown-item{
   color: red;
 }
-.container{
-  margin-top: 200px;
-}
 .card{
   margin-left: 200px;
+}
+.material-icons {
+  display:inline-flex;
+  vertical-align: -5px;
 }
