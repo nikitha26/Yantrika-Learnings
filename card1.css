@@ -1,15 +1,82 @@
-/* html{
-    overflow: hidden;
-} */
 *{
-    margin: 0px;
-    padding: 0px;  
-  }
-  .navbar{
-    background-color: rgb(33,150,243);
-  }
-  .image{
+  margin: 0px;
+  padding: 0px;  
+}
+.navbar{
+  background-color: rgb(33,150,243);
+}
+li a{
+  color:rgb(156, 154, 158);
+  font-size: 18px;
+}
+li a:hover{
+  text-decoration: none;
+}
+.image{
     border-radius: 50%;
+    
+}
+ul.sidebaritems{
+  /* margin-top: 80px; */
+  /* margin-left: 0px; */
+  list-style-type: none;
+}
+ul.sidebaritems li {
+  text-decoration: none;
+}
+.sidebar{
+  position: fixed;
+  width: 210px;
+  height: 100%;
+  left:-250px;
+  background-color:rgb(57,68,77);
+  transition: left 0.5s ease;
+  /* margin-top: -200px; */
+}
+.hide{
+  left: -250px;
+}
+nav ul li{
+  line-height: 40px;
+}
+nav ul li a{
+  padding-left: 30px;
+  padding-top: 20px;
+  width: 100%;
+  display: block;
+}
+nav ul li a:hover{
+  color:rgb(230, 235, 240);
+  
+}
+nav ul ul li{
+  border-bottom: none;
+}
+.btn{
+  cursor: pointer;
+  transition: left 0.4s ease;
+}
+.btn.click{
+  left: 260px;
+}
+.btn.click i::before{
+  content: '';
+}
+.sidebar.show{
+  left:0px;
+}
+.btn i{
+  font-size: 20px;
+  line-height:20px ;
+}
+.img i{
+  font-size: 30px;
+}
+#icon{
+  font-size: 25px;
+  color: rgb(157, 205, 228);
+  margin-top: 10px;
+  margin-left: -8px;
 }
 #brand{
   margin:3px;
@@ -22,35 +89,30 @@
   margin-top: 7px;
   margin-right: -9px;
 }
-#sidemenu{
-    background-color: rgb(57,68,77);
-    height: 800px;
+.active{
+  background-color: rgb(47,57,64);
 }
-/* .chapters{
-  margin-top: 10px;
-} */
-ul li {
-  list-style-type: none;
-  /* margin-left: 50px; */
-  font-size: 20px;
+span{
+  margin-top:2px;
 }
-ul li a:hover{
-  text-decoration: none;
-}
-#demo{
-  margin-left: 50px;
-}
-#demo1{
-  margin-left: 50px;
-}
-.btn:focus,.btn:active{
-  box-shadow: none !important;
+button{
+  border: none !important;
   outline: none !important;
 }
-#video{
-  margin-top: 150px;
-  margin-left: 70px;
+.dropdown-menu{
+  height: 70px;
 }
-li a:hover{
+.dropdown{
+  margin-right: 40px;
+}
+.dropdown-item{
   color: red;
 }
+.card{
+  margin-left: 200px;
+}
+.material-icons {
+  display:inline-flex;
+  vertical-align: -5px;
+}
+

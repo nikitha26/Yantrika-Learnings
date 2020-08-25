@@ -57,87 +57,90 @@
     <!-- Top navbar ended -->
 
     <!-- side navbar started -->
-    <div class="wrapper">
-        <nav class="sidebar">
-            <ul class="sidebaritems pt-5 mt-4">
-                <li>
-                    <a href="#" id="demo1" onclick="background('demo1')" >
-                        <i class="material-icons" id="icon1">dashboard</i>Dashboard
-                    </a>
-                </li>
-                <li>
-                    <a href="mycourse.html" id="demo2" onclick="background('demo2')">
-                        <i class="material-icons" id="icon1">school</i>Mycourses
-                        
-                    </a>
-                </li>
-                <li>
-                    <a href="#" id="demo3" onclick="background('demo3')">
-                        <i class="material-icons" id="icon1">payments</i>Payment
-                    </a>
-                </li>
-                <li>
-                    <a href="#" id="demo4" onclick="background('demo4')">
-                        <i class="material-icons" id="icon1">settings</i>Settings
-                    </a>
-                </li>
-                <li>
-                    <a href="#" id="demo5" onclick="background('demo5')">
-                        <i class="material-icons" id="icon1">person</i>Profile
-                    </a>
-                </li>
-                <li class="d-lg-none">
-                    <a href="#">
-                        <i class="material-icons" id="icon1">logout</i>SignOut
-                    </a>
-                </li>
-            </ul>
+    <div class="row">
+        <div class="col-lg-2 col-md-2">
+            <nav class="sidebar">
+                <ul class="sidebaritems pt-5 mt-4">
+                    <li>
+                        <a href="#" id="demo1" onclick="background('demo1')" >
+                            <i class="material-icons" id="icon1">dashboard</i>Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mycourse.html" id="demo2" onclick="background('demo2')">
+                            <i class="material-icons" id="icon1">school</i>Mycourses
+                            
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="demo3" onclick="background('demo3')">
+                            <i class="material-icons" id="icon1">payments</i>Payment
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="demo4" onclick="background('demo4')">
+                            <i class="material-icons" id="icon1">settings</i>Settings
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="demo5" onclick="background('demo5')">
+                            <i class="material-icons" id="icon1">person</i>Profile
+                        </a>
+                    </li>
+                    <li class="d-lg-none">
+                        <a href="#">
+                            <i class="material-icons" id="icon1">logout</i>SignOut
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    
+        <!-- Side navbar ended -->
 
-        </nav>
-    <!-- Side navbar ended -->
-
-    <!-- Main Page Content -->
-    <div id="mainpage">
-        <div class="container pt-5 mt-5">
-            <table class="table table-borderless">
-                <tbody>
+        <!-- Main Page Content -->
+    
+        <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+            <div id="mainpage">
+                <table class="table table-borderless">
+                    <tbody>
+                        <thead>
+                            <tr>
+                            <th><h4 class="pull-left">Events</h4></th>
+                            <th class="btn btn-primary pull-right">New Event</th>
+                            </tr>
+                        </thead>
+                    </tbody>     
+                </table>
+                <table class="table table-bordered table-hover">
                     <thead>
                         <tr>
-                        <th><h4 class="pull-left">Events</h4></th>
-                        <th class="btn btn-primary pull-right">New Event</th>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Postedon</th>
+                        <th>user</th>
                         </tr>
                     </thead>
-                </tbody>     
-            </table>
-        </div>
-        <div class="container"> 
-            <table class="table table-bordered table-hover">
-            <thead>
-                <tr>
-                <th>Title</th>
-                <th>Description</th>
-                <th>Postedon</th>
-                <th>user</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                <td>New year party</td>
-                <td>This is party of new year celebration</td>
-                <td>2020/4/08</td>
-                <td>Prasad</td>
-                </tr>
-                <tr>
-                    <td>New year party</td>
-                    <td>This is party of new year celebration</td>
-                    <td>2020/4/08</td>
-                    <td>Prasad</td>
-                    </tr>
-            </tbody>
-            </table>     
+                    <tbody>
+                        <tr>
+                            <td>New year party</td>
+                            <td>This is party of new year celebration</td>
+                            <td>2020/4/08</td>
+                            <td>Prasad</td>
+                        </tr>
+                        <tr>
+                            <td>New year party</td>
+                            <td>This is party of new year celebration</td>
+                            <td>2020/4/08</td>
+                            <td>Prasad</td>
+                        </tr>
+                    </tbody>
+                </table>     
+                
+            </div>
+
         </div>
     </div>
-</div>
 <script>
     //Menu Button Code 
     $('document').ready(function(){
